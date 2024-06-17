@@ -6,20 +6,6 @@ export default function AddComment({elementId, comments, setComments}) {
   const [rate, setRate] = useState(0)
   const newComment = {comment: review, rate: rate, elementId: elementId}
 
-  // let setCommentHandler = (e) => {
-  //   setComments({
-  //     ...comments,
-  //     comment: e.target.value
-  //   })
-  // }
-
-  // let setRateHandler = (e) => {
-  //   setComments({
-  //     ...comments, 
-  //     rate: e.target.value
-  //   })
-  // }
-
   let sendComment = (e) => {
     e.preventDefault()
     console.log(comments)
