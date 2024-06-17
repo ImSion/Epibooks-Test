@@ -22,7 +22,7 @@ export default function CommentArea({ asin }) {
 
   return (
     
-    <div data-testid="comment-area" className=''>
+    <div data-testid="comment-area" className='flex flex-col items-center p-2'>
         <AddComment elementId={asin} comments={comments} setComments={setComments} />
         <CommentList comments={comments} />
     </div>
